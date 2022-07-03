@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.container {
+  display: flex;
+  padding: 50px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-right: 120px;
+}
+
+.services {
+  flex-grow: 1;
+  flex-basis: 100%;
+
+}
+
+.services ul {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+.services a {
+  color: white;
+  text-decoration: none;
+}
+
+.services a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.contact {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.contact ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.container h3 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.copyright {
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
